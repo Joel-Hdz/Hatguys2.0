@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 100px 0px;
+    background-color: rgb(36, 53, 70);
+    color: white;
+}
+.link {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+.entrance {
+    background-color: rgb(36, 53, 70);
+    color: rgb(255, 255, 255);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headEntrance {
+    font-size: 3rem;
+    font-weight: 900;
+}
+#notifications {
+    font-size: 1rem;
+}
+.eImg {
+    width: 800px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("imgs/hats.jpeg");
+
+}
+.entranceImg {
+    width: 500px;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    height: 80px;
+    margin-top: 12em;
+    padding: 0px, 10px, auto;
+    background-color: rgb(36, 53, 70);
+    color: white;
+  }
+
+  .footerlinks > a {
+    color: white;
+  }
+
+  .footerlinks {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-decoration: none;
+    margin: 2px;
+  }
