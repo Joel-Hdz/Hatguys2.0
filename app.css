@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-content: center;
     padding: 20px 100px 0px;
-    background-color: rgb(36, 53, 70);
+    background-color: #212529;
     color: white;
 }
 .link {
@@ -18,7 +18,7 @@ header {
     text-decoration: none;
 }
 .entrance {
-    background-color: rgb(36, 53, 70);
+    background-color: #212529;
     color: rgb(255, 255, 255);
     padding: 20px 50px;
     display: flex;
@@ -44,6 +44,28 @@ header {
 .entranceImg {
     width: 500px;
 }
+.featured {
+    display: flex;
+    justify-content: space-evenly;
+}
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.features > img {
+    width: 150px;
+    display: flex;
+
+}
+.featureH1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #212529;
+}
 footer {
     display: flex;
     justify-content: flex-end;
@@ -51,7 +73,7 @@ footer {
     height: 80px;
     margin-top: 12em;
     padding: 0px, 10px, auto;
-    background-color: rgb(36, 53, 70);
+    background-color: #212529;
     color: white;
   }
 
