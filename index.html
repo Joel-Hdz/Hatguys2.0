@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hatguys2.0</title>
     <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="navbar">
+    <header id="navbar">
         <div class="logo">HATGUY'S</div>
         <div class="headerLinks">
             <a href class="link">Home</a>
@@ -19,11 +22,11 @@
         </div>
     </header>
     <section class="entrance">
-        <div class="headEntrance">Best hats around, Any team, any color!<p id="notifications">Get notifications on all
+        <div class="entranceText">Best hats around, Any team, any color!<p id="notifications">Get notifications on all
                 new drops. 10% off
                 on your first purchase. Get a chance to win a
                 free hat each month.</p>
-            <button type="button" id="Signup">Sign up!</button>
+            <button type="button" id="sUpButton">Sign up!</button>
         </div>
         <div class="eImg"></div>
     </section>
@@ -31,31 +34,42 @@
     <section class="featured">
         <div class="features">
             <img src="imgs/boston.jpg" alt="">
-            <p class="fitteds">
-            <h2>Fitteds</h2>
-            All new fitted hats. In all different colors and every team available.
-            </p>
+            <h3>Fitteds</h3>
+            <p class="fitteds">All new fitted hats. In all different colors and every team available.</p>
+
         </div>
         <div class="features">
             <img src="imgs/yankee.jpg" alt="">
-            <p class="dadhats">
             <h3>Dad Hats</h3>
-            This design has become one of our most popular hats. Any style and color.
+            <p class="dadhats">
+                This design has become one of our most popular hats. Any style and color.
             </p>
         </div>
         <div class="features">
             <img src="imgs/hatstyles.jpg" alt="">
+
+            <h3>New color waves</h3>
             <p class="styles">
-            <h3>All styles</h3>
-            All new color waves, find your own unique desing fitted just for you.
+                All new color waves, find your own unique desing fitted just for you.
             </p>
         </div>
         <div class="features">
             <img class="cubs" src="imgs/lawave.jpg" alt="">
-            <p class="favteams">
-            <h3>Your favorite teams.</h3>
-            Get your favorite team in any of the different designs and styles, just how you want it.
+            <h3>Your favorite teams</h3>
+            <p class="favteams">Get your favorite team in any of the different designs and styles, just how you want it.
             </p>
+
+
+        </div>
+    </section>
+    <section class="member">
+        <div class="signUp">
+            <h2>Become a member with just your email!</h2>
+            <p></p>
+            <div class="enterEmail">
+                <input class="input" type="email" placeholder="Enter Your Email">
+                <button type="button" id="sUpButton">Sign up!</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -66,6 +80,31 @@
         </ul>
         <span>Copyright <sup>&copy; 2021 </sup>, HatGuy's</span>
     </footer>
+
+    <script>
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up")
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+
+            if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+            }
+
+            lastScroll = currentScroll;
+        })
+    </script>
 
 </body>
 

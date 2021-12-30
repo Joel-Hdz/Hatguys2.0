@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 body {
     margin: 0px;
@@ -8,9 +9,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 20px 100px 0px;
-    background-color: #212529;
+    padding: 10px 25px;
+    background-color: #1D2731;
     color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .link {
     margin: 10px;
@@ -18,28 +23,39 @@ header {
     text-decoration: none;
 }
 .entrance {
-    background-color: #212529;
+    background-color: #1D2731;
     color: rgb(255, 255, 255);
-    padding: 20px 50px;
+    padding: 50px 50px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.headEntrance {
+.entranceText {
     font-size: 3rem;
     font-weight: 900;
 }
 #notifications {
     font-size: 1rem;
+    font-weight: 300;
+}
+#sUpButton {
+    font-weight: 700;
+    background-color: #778da9;
+    padding: 10px 20px;
+    border-radius: 1em;
+    border: 1px solid black;
+}
+#sUpButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 1px 4px #000000;
 }
 .eImg {
-    width: 800px;
-    height: 200px;
+    width: 850px;
+    height: 250px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("imgs/hats.jpeg");
-
 }
 .entranceImg {
     width: 500px;
@@ -53,18 +69,53 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 215px;
+    border: #1D2731 solid 1px;
+    border-radius: 1rem;
+    margin: 10px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.527);
+}
+.features:hover {
+    transform: scale(1.05);
 }
 div.features > img {
     width: 150px;
+    max-height: 150px;
+    margin-top: 10px;
+    border-radius: .5rem;
     display: flex;
-
+}
+div.features > h3 {
+    font-weight: 900;
+}
+div.features > p {
+    margin: 5px;
 }
 .featureH1 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 70px;
     font-size: 3rem;
-    color: #212529;
+    color: #1D2731;
+}
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 75px;
+}
+.signUp {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    margin: 0px 15px;
+}
+.enterEmail {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 footer {
     display: flex;
@@ -87,4 +138,11 @@ footer {
     padding-right: 20px;
     text-decoration: none;
     margin: 2px;
+  }
+  .scroll-down header {
+      transform: translate3d(0, -100%, 0);
+  }
+
+  .scroll-up header {
+      filter: drop-shadow(0 -10px 20px rgb(0, 0, 0))
   }
